@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #1d4ed8;
+}
+
+ul {
+  list-style: none;
+  overflow-y: auto;
+}
+
+li {
+  background-color: #eff6ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1e3a8a;
+}
+
+.delete {
+  background-color: #bfdbfe;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #1e40af;
+}
+
+.delete:hover {
+  background-color: #93c5fd;
+}
+
+.tasks {
+  max-height: 200px;        /* altura da área de tarefas */
+  overflow-y: auto;         /* ativa rolagem vertical */
+  padding-right: 5px;       /* evita cortar o scroll */
+}
+
+/* Scrollbar (opcional, só para navegadores WebKit) */
+.tasks::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+  background-color: #93c5fd;
+  border-radius: 4px;
+}
+
+.tasks::-webkit-scrollbar-track {
+  background-color: #eff6ff;
+}
