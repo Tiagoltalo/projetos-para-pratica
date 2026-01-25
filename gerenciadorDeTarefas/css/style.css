@@ -68,6 +68,8 @@ li {
   justify-content: space-between;
   align-items: center;
   color: #1e3a8a;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
 
 .delete {
@@ -101,4 +103,30 @@ li {
 
 .tasks::-webkit-scrollbar-track {
   background-color: #eff6ff;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* Botão de concluir */
+.complete {
+  background-color: #22c55e; /* verde */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.complete:hover {
+  background-color: #16a34a;
+}
+
+li.done {
+  opacity: 0;
+  transform: translateX(20px);
 }

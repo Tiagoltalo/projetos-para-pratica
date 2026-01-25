@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4fdf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #1f7a3a;
+    margin-bottom: 20px;
+}
+
+.atm-box {
+    background-color: #ffffff;
+    border: 2px solid #1f7a3a;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.value-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1f7a3a;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.sake {
+    background-color: #d9534f;
+}
+
+.deposit {
+    background-color: #1f7a3a;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.result-area {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #1f7a3a;
+    border-radius: 6px;
+    background-color: #f4fdf7;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-text {
+    color: #1f7a3a;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+

@@ -1,7 +1,7 @@
 let taskArea = document.querySelector("#task");
 
 // Closure que armazena o estado da variável itemNumber
-function task() {
+function closureTask() {
     let itemNumber = 0;
 
     // Função para adicionar uma nova tarefa
@@ -11,7 +11,11 @@ function task() {
         taskArea.innerHTML += `
             <li id="${itemNumber}">
                 ${taskInput.value}
-                <button class="delete" onclick="deleteTask(${itemNumber})">X</button>
+                
+                <div class="actions">
+                    <button class="complete" onclick="completeTask(${itemNumber})">✓</button>
+                    <button class="delete" onclick="deleteTask(${itemNumber})">X</button>
+                </div>
             </li>
         `;
     
@@ -28,4 +32,10 @@ function deleteTask(itemNumber) {
     itemTask.remove();
 };
 
-let item = task();
+function completeTask(itemNumber) {
+    let itemTask = document.getElementById(itemNumber);
+    setTimeout(() => itemTask.remove(), 5000)
+}
+
+
+let item = closureTask();
